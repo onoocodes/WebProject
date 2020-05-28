@@ -1,0 +1,27 @@
+GET http://localhost:5000/applications
+
+
+###
+POST http://localhost:5000/applications
+Content-Type: application/json
+
+
+{
+    "name" : "mulenga kawimbe",
+    "email" : "onoocodes@gmail.com",
+    "discription" : "this is just demo"
+}
+
+###
+PUT  http://localhost:5000/applications/5ecef4486c01fd19c4754880
+Content-Type: application/json
+
+
+{
+    "name" : "mum",
+    "email" : "onoocodes@gmail.com",
+    "discription" : "love"
+}
+
+###
+DELETE   http://localhost:5000/applications/5ecef367cec5484300e09e49
