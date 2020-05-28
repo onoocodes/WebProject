@@ -51,9 +51,9 @@ router.delete('/:id',async(req,res)=>{
     }
 })
 
-router.get('/:id',(req,res)=>{
-    const applicant = applications.findById(req.params.id);
-    res.json(applicant)
+router.get('/:id',async (req,res)=>{
+    const applicant = await applications.findById(req.params.id);
+    res.send(applicant);
 })
 
 module.exports = router;
